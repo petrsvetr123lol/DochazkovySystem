@@ -14,8 +14,13 @@ namespace DochazkovySystem
     {
         public Form1()
         {
+            Record record;
             InitializeComponent();
         }
 
+        private void label1_Click(object sender, EventArgs e)
+        {
+          
+        }
     }
 }
