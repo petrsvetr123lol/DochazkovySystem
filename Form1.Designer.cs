@@ -48,16 +48,16 @@
             this.listboxAll.ItemHeight = 15;
             this.listboxAll.Location = new System.Drawing.Point(12, 44);
             this.listboxAll.Name = "listboxAll";
-            this.listboxAll.Size = new System.Drawing.Size(161, 364);
+            this.listboxAll.Size = new System.Drawing.Size(239, 364);
             this.listboxAll.TabIndex = 0;
             // 
             // listboxPerson
             // 
             this.listboxPerson.FormattingEnabled = true;
             this.listboxPerson.ItemHeight = 15;
-            this.listboxPerson.Location = new System.Drawing.Point(179, 44);
+            this.listboxPerson.Location = new System.Drawing.Point(257, 44);
             this.listboxPerson.Name = "listboxPerson";
-            this.listboxPerson.Size = new System.Drawing.Size(161, 364);
+            this.listboxPerson.Size = new System.Drawing.Size(239, 364);
             this.listboxPerson.TabIndex = 0;
             this.listboxPerson.SelectedIndexChanged += new System.EventHandler(this.listboxPerson_SelectedIndexChanged);
             // 
@@ -65,9 +65,9 @@
             // 
             this.listboxRecord.FormattingEnabled = true;
             this.listboxRecord.ItemHeight = 15;
-            this.listboxRecord.Location = new System.Drawing.Point(346, 44);
+            this.listboxRecord.Location = new System.Drawing.Point(502, 44);
             this.listboxRecord.Name = "listboxRecord";
-            this.listboxRecord.Size = new System.Drawing.Size(161, 364);
+            this.listboxRecord.Size = new System.Drawing.Size(239, 364);
             this.listboxRecord.TabIndex = 0;
             // 
             // label1
@@ -82,7 +82,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(179, 26);
+            this.label2.Location = new System.Drawing.Point(257, 26);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(41, 15);
             this.label2.TabIndex = 1;
@@ -91,7 +91,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(346, 26);
+            this.label3.Location = new System.Drawing.Point(502, 26);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(55, 15);
             this.label3.TabIndex = 1;
@@ -100,7 +100,9 @@
             // btnShiftStart
             // 
             this.btnShiftStart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnShiftStart.Location = new System.Drawing.Point(513, 44);
+            this.btnShiftStart.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnShiftStart.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnShiftStart.Location = new System.Drawing.Point(757, 51);
             this.btnShiftStart.Name = "btnShiftStart";
             this.btnShiftStart.Size = new System.Drawing.Size(171, 54);
             this.btnShiftStart.TabIndex = 2;
@@ -111,7 +113,9 @@
             // btnShiftEnd
             // 
             this.btnShiftEnd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnShiftEnd.Location = new System.Drawing.Point(513, 104);
+            this.btnShiftEnd.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnShiftEnd.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnShiftEnd.Location = new System.Drawing.Point(757, 111);
             this.btnShiftEnd.Name = "btnShiftEnd";
             this.btnShiftEnd.Size = new System.Drawing.Size(171, 54);
             this.btnShiftEnd.TabIndex = 2;
@@ -122,7 +126,9 @@
             // btnPauseStart
             // 
             this.btnPauseStart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnPauseStart.Location = new System.Drawing.Point(513, 164);
+            this.btnPauseStart.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPauseStart.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnPauseStart.Location = new System.Drawing.Point(757, 171);
             this.btnPauseStart.Name = "btnPauseStart";
             this.btnPauseStart.Size = new System.Drawing.Size(171, 54);
             this.btnPauseStart.TabIndex = 2;
@@ -133,7 +139,9 @@
             // btnPauseEnd
             // 
             this.btnPauseEnd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.btnPauseEnd.Location = new System.Drawing.Point(513, 224);
+            this.btnPauseEnd.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPauseEnd.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnPauseEnd.Location = new System.Drawing.Point(757, 231);
             this.btnPauseEnd.Name = "btnPauseEnd";
             this.btnPauseEnd.Size = new System.Drawing.Size(171, 54);
             this.btnPauseEnd.TabIndex = 2;
@@ -144,7 +152,9 @@
             // btnDoctorStart
             // 
             this.btnDoctorStart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.btnDoctorStart.Location = new System.Drawing.Point(513, 284);
+            this.btnDoctorStart.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDoctorStart.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnDoctorStart.Location = new System.Drawing.Point(757, 291);
             this.btnDoctorStart.Name = "btnDoctorStart";
             this.btnDoctorStart.Size = new System.Drawing.Size(171, 54);
             this.btnDoctorStart.TabIndex = 2;
@@ -155,7 +165,9 @@
             // btnDoctorEnd
             // 
             this.btnDoctorEnd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.btnDoctorEnd.Location = new System.Drawing.Point(513, 344);
+            this.btnDoctorEnd.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDoctorEnd.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnDoctorEnd.Location = new System.Drawing.Point(757, 351);
             this.btnDoctorEnd.Name = "btnDoctorEnd";
             this.btnDoctorEnd.Size = new System.Drawing.Size(171, 54);
             this.btnDoctorEnd.TabIndex = 2;
@@ -167,7 +179,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(696, 417);
+            this.ClientSize = new System.Drawing.Size(936, 417);
             this.Controls.Add(this.btnDoctorEnd);
             this.Controls.Add(this.btnDoctorStart);
             this.Controls.Add(this.btnPauseEnd);
@@ -180,6 +192,8 @@
             this.Controls.Add(this.listboxRecord);
             this.Controls.Add(this.listboxPerson);
             this.Controls.Add(this.listboxAll);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Docházkový systém";
             this.ResumeLayout(false);

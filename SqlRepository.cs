@@ -15,7 +15,7 @@ namespace DochazkovySystem
                 ChipId = "123456",
                 Firstname = "John",
                 Lastname ="Doe",
-                PersonalNumber = "0001110000110"
+                PersonalNumber = "1"
             };
             Person person2 = new Person()
             {
@@ -23,7 +23,7 @@ namespace DochazkovySystem
                 ChipId = "123456",
                 Firstname = "Petr",
                 Lastname = "Lanik",
-                PersonalNumber = "11240000110"
+                PersonalNumber = "2"
             };
             people.Add(person1);
             people.Add(person2);

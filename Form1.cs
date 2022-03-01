@@ -25,11 +25,11 @@ namespace DochazkovySystem
             {
                 records.AddRange(person.Records);
             }
-            RefrshGUI();
+            RefreshGui();
            
         }
 
-        private void RefrshGUI()
+        private void RefreshGui()
         {
             listboxAll.Items.Clear();
             listboxPerson.Items.Clear();
@@ -41,7 +41,7 @@ namespace DochazkovySystem
             //psano  v Linqu
             foreach (Record record in records.OrderByDescending(p=> p.DateTime)) 
             {
-                listboxAll.Items.Add($"{record.DateTime} - {record.Person.Lastname} - {record.Reason}");
+                listboxAll.Items.Add($"{record.DateTime.ToString("dd.MM hh:mm")} - {record.Person.Lastname} - {record.Reason}");
             }
         }
 
@@ -82,32 +82,104 @@ namespace DochazkovySystem
 
         private void btnShiftStart_Click(object sender, EventArgs e)
         {
-
+            int index = listboxPerson.SelectedIndex;
+            if (index >= 0)
+            {
+                Record newRecord = new Record()
+                {
+                    DateTime = DateTime.Now,
+                    Person = people[index],
+                    Reason = RecordReason.StartShift
+                };
+                records.Add(newRecord);
+                people[index].Records.Add(newRecord);
+                RefreshGui();
+            }
         }
 
         private void btnShiftEnd_Click(object sender, EventArgs e)
         {
-
+            int index = listboxPerson.SelectedIndex;
+            if (index >= 0)
+            {
+                Record newRecord = new Record()
+                {
+                    DateTime = DateTime.Now,
+                    Person = people[index],
+                    Reason = RecordReason.EndShift
+                };
+                records.Add(newRecord);
+                people[index].Records.Add(newRecord);
+                RefreshGui();
+            }
         }
 
         private void btnPauseStart_Click(object sender, EventArgs e)
         {
-
+            int index = listboxPerson.SelectedIndex;
+            if (index >= 0)
+            {
+                Record newRecord = new Record()
+                {
+                    DateTime = DateTime.Now,
+                    Person = people[index],
+                    Reason = RecordReason.StartPause
+                };
+                records.Add(newRecord);
+                people[index].Records.Add(newRecord);
+                RefreshGui();
+            }
         }
 
         private void btnPauseEnd_Click(object sender, EventArgs e)
         {
-
+            int index = listboxPerson.SelectedIndex;
+            if (index >= 0)
+            {
+                Record newRecord = new Record()
+                {
+                    DateTime = DateTime.Now,
+                    Person = people[index],
+                    Reason = RecordReason.EndPause
+                };
+                records.Add(newRecord);
+                people[index].Records.Add(newRecord);
+                RefreshGui();
+            }
         }
 
         private void btnDoctorStart_Click(object sender, EventArgs e)
         {
-
+            int index = listboxPerson.SelectedIndex;
+            if (index >= 0)
+            {
+                Record newRecord = new Record()
+                {
+                    DateTime = DateTime.Now,
+                    Person = people[index],
+                    Reason = RecordReason.StartDoctor
+                };
+                records.Add(newRecord);
+                people[index].Records.Add(newRecord);
+                RefreshGui();
+            }
         }
 
         private void btnDoctorEnd_Click(object sender, EventArgs e)
         {
-
+            int index = listboxPerson.SelectedIndex;
+            if (index >= 0)
+            {
+                Record newRecord = new Record()
+                {
+                    DateTime = DateTime.Now,
+                    Person = people[index],
+                    Reason = RecordReason.EndDoctor
+                };
+                records.Add(newRecord);
+                people[index].Records.Add(newRecord);
+                RefreshGui();
+            }
         }
     }
 }
