@@ -79,7 +79,7 @@ namespace DochazkovySystem
             btnPauseStart.Enabled = enabled;
             btnPauseEnd.Enabled = enabled;
         }
-
+       
         private void btnShiftStart_Click(object sender, EventArgs e)
         {
             int index = listboxPerson.SelectedIndex;
