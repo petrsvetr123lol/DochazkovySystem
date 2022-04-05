@@ -1,11 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
+using System.Data.SqlClient;
 
 namespace DochazkovySystem
 {
     public class SqlRepository
     {
+        private string connectionString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=DochazkovySystem;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
         private List<Person> TempPeople()
         {
             List<Person> people = new List<Person>();
@@ -34,7 +34,15 @@ namespace DochazkovySystem
         {
             List<Person> people = new List<Person>();
 
-            return TempPeople();
+            //správný způsob použití
+            using (SqlConnection sqlConnection = new SqlConnection(connectionString))
+            {
+                sqlConnection.Open();
+            }
+
+
+              return people;
         }
+        
     }
 }
