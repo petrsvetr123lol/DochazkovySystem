@@ -82,6 +82,7 @@ namespace DochazkovySystem
        
         private void btnShiftStart_Click(object sender, EventArgs e)
         {
+            
             int index = listboxPerson.SelectedIndex;
             if (index >= 0)
             {
