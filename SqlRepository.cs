@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Data.SqlClient;
 
 namespace DochazkovySystem
@@ -38,6 +39,24 @@ namespace DochazkovySystem
             using (SqlConnection sqlConnection = new SqlConnection(connectionString))
             {
                 sqlConnection.Open();
+                using (SqlCommand sqlCommand = new SqlCommand("SELECT * FROM Person", sqlConnection))
+                {
+                    using (SqlDataReader dataReader = sqlCommand.ExecuteReader())
+                    {
+                        while (dataReader.Read())
+                        {
+                            people.Add(new Person()
+                            {
+                                Id = Convert.ToInt32(dataReader["Id"]),
+                                Firstname = dataReader["FirstName"].ToString(),
+                                Lastname = dataReader["LastName"].ToString(),
+                                PersonalNumber = dataReader["PersonalNumber"].ToString(),
+                                ChipId = dataReader["ChipID"].ToString(),
+                            }); 
+                        }
+                    }
+                } 
+                sqlConnection.Close();
             }
 
 
